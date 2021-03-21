@@ -35,7 +35,7 @@ def lambda_handler(event, context):
         label_value = k1
 
     if k2 is not None:
-        label_value += " AND " + k2
+        label_value += " OR " + k2
 
     query = {
         "query": {
