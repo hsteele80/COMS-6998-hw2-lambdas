@@ -2,7 +2,6 @@
 import json
 import requests
 import boto3
-from requests_aws4auth import AWS4Auth
 
 def lambda_handler(event, context):
     lex_client = boto3.client('lex-runtime')
